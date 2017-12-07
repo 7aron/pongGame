@@ -11,8 +11,8 @@ var dir = [1, -1];
 var direction = dir[Math.round(Math.random())];
 var dx = 5;
 var dy = 5;
-var score = 0; 
-var score1 = 0; 
+var score = 0; //left z - o
+var score1 = 0; //right a - b
 
 
 
@@ -113,6 +113,9 @@ else if(y < 0) {
 };
 
 loop();
+
+// x - z
+// y - o
 
 
 
