@@ -11,8 +11,8 @@ var dir = [1, -1];
 var direction = dir[Math.round(Math.random())];
 var dx = 5;
 var dy = 5;
-var score = 0; //left z - o
-var score1 = 0; //right a - b
+var score = 0;
+var score1 = 0;
 
 
 
@@ -114,19 +114,17 @@ else if(y < 0) {
 
 loop();
 
-// x - z
-// y - o
 
 
 
-	const upKey = 38;
-	const downKey = 40;
-	const wKey = 87;
-	const sKey = 83;
+	const up = 38;
+	const down = 40;
+	const w = 87;
+	const s = 83;
 
 	document.addEventListener('keydown', function(event){
 
-		if(event.keyCode === upKey) {
+		if(event.keyCode === w) {
 			fPlayerM = fPlayerM - 30;
 
 			if(fPlayerM < 0) {
@@ -135,7 +133,7 @@ loop();
 
 		}
 
-		else if(event.keyCode === downKey){
+		else if(event.keyCode === s){
 
 			fPlayerM = fPlayerM + 30;
 
@@ -153,7 +151,7 @@ loop();
 
 	document.addEventListener('keydown', function(event){
 
-		if(event.keyCode === wKey) {
+		if(event.keyCode === up) {
 			sPlayerM = sPlayerM - 30;
 
 			if(sPlayerM < 0) {
@@ -163,7 +161,7 @@ loop();
 
 		}
 
-		else if(event.keyCode === sKey){
+		else if(event.keyCode === down){
 
 			sPlayerM = sPlayerM + 30;
 
